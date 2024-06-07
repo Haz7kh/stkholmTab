@@ -1,0 +1,41 @@
+/* Hero.css */
+
+.hero {
+  background-image: url("../assets/imgs/heroImg.png"); /* Adjust the path as necessary */
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.home-icon {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.separator {
+  width: 2px;
+  height: 30px;
+  background-color: #fff;
+  margin: 0 10px;
+}
+
+.page-title {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0;
+}
