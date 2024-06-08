@@ -9,7 +9,7 @@ const app = express();
 const port = process.env.PORT || 5001;
 
 // Middleware
-app.use(cors({}));
+app.use(cors());
 app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
@@ -26,12 +26,12 @@ mongoose
 const userRoutes = require("./routes/users").router;
 const dataRoutes = require("./routes/data");
 const postRoutes = require("./routes/posts");
-const contactRoutes = require("./routes/contact"); // Import the contact routes
+const contactRoutes = require("./routes/contact");
 
 app.use("/api/users", userRoutes);
 app.use("/api/data", dataRoutes);
 app.use("/api/posts", postRoutes);
-app.use("/api/contact", contactRoutes); // Use the contact routes
+app.use("/api/contact", contactRoutes);
 
 // Serve frontend
 app.use(express.static(path.join(__dirname, "frontend", "build")));
