@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://stkholm-tab-api.vercel.app/api"; // Make sure the port matches your backend server
+const API_URL = "http://localhost:3000/api"; // Make sure the port matches your backend server
 
 const register = (userData) => {
   return axios.post(`${API_URL}/users/register`, userData);
