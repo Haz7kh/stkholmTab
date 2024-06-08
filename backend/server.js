@@ -9,12 +9,7 @@ const app = express();
 const port = process.env.PORT || 5001;
 
 // Middleware
-app.use(
-  cors({
-    origin: "https://stkholm-jby41rige-haz7khs-projects.vercel.app/", // Replace with your frontend URL
-    optionsSuccessStatus: 200,
-  })
-);
+app.use(cors({}));
 app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
