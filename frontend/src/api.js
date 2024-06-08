@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3000/api"; // Make sure the port matches your backend server
+const API_URL = "https://stkholmtab-server.onrender.com/api"; // Make sure the port matches your backend server
 
 const register = (userData) => {
   return axios.post(`${API_URL}/users/register`, userData);
