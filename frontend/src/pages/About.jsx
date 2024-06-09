@@ -163,7 +163,9 @@ const About = () => {
             sidan. Du kan också mejla vårt supportteam på{" "}
             <a href="mailto:support@example.com">info@stockholmtab.com</a>
           </p>
-          <button className="help-button">Kontakt nu</button>
+          <button className="help-button">
+            <a href="/contact">Kontakt nu</a>
+          </button>
         </div>
       </section>
       <section className="team-section">
