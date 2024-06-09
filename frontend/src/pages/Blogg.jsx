@@ -30,7 +30,7 @@ const Blogg = () => {
             <p>{post.content}</p>
             {post.photo && (
               <img
-                src={`https://stkholmtab-server.onrender.com/api/${post.photo}`}
+                src={`https://stkholmtab-server.onrender.com/${post.photo}`}
                 alt={post.title}
                 className="blogg-photo"
               />

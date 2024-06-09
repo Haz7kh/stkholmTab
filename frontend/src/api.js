@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "your+api+link";
+const API_URL = "https://stkholmtab-server.onrender.com/api";
 
 const register = (userData) => {
   return axios.post(`${API_URL}/users/register`, userData);

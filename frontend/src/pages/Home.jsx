@@ -170,7 +170,7 @@ const Home = () => {
                 <p>{truncateContent(post.content, 100)}</p>
                 {post.photo && (
                   <img
-                    src={`http://localhost:3000/${post.photo}`}
+                    src={`https://stkholmtab-server.onrender.com/${post.photo}`}
                     alt={post.title}
                     className="post-photo"
                   />
