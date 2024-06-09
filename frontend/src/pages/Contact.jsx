@@ -65,8 +65,8 @@ const Contact = () => {
                 <i className="fas fa-envelope"></i> info@stockholmtab.com
               </p>
               <p>
-                <i className="fas fa-map-marker-alt"></i> Sleeknote ApS Jens
-                Baggesens Vej 90A, 8200 Aarhus
+                <i className="fas fa-map-marker-alt"></i>
+                Svetsarvägen 15, 171 41 Solna
               </p>
             </div>
             <div className="contact-social">
