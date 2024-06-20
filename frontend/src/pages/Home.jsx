@@ -77,11 +77,14 @@ const Home = () => {
                 karriärframgång!
               </p>
               <a href="/about" className="read-more-btn">
-                LÄS MER
+                Jobbmatchningstjänster i Stockholm
               </a>
             </div>
             <div className="image">
-              <img src={introImg} alt="Welcome" />
+              <img
+                src={introImg}
+                alt="Stockholm T AB introduction image - job matching services in Stockholm"
+              />
             </div>
           </div>
         </section>
