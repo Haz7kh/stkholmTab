@@ -68,12 +68,13 @@ const Home = () => {
             <div className="text">
               <h2>Välkommen till Stockholm T AB!</h2>
               <p className="intro">
-                Vi specialiserar oss på att hjälpa arbetssökande att lyckas.
-                Vårt professionella team erbjuder personlig coachning,
-                CV-optimering och intervjuförberedelser. Med vår
-                expertvägledning kommer du att vara redo att självklart ta dig
-                an din jobbsökning och säkra ditt drömjobb. Låt Stockholm T AB
-                bli din partner för karriärframgång!
+                Vi specialiserar oss på Rusta och matcha för arbetssökande i
+                Stockholm. Vårt professionella team erbjuder personlig
+                coachning, CV-optimering och intervjuförberedelser. Med vår
+                expertvägledning och våra omfattande job matching services i
+                Stockholm kommer du att vara redo att ta dig an din jobbsökning
+                och säkra ditt drömjobb. Låt Stockholm T AB bli din partner för
+                karriärframgång!
               </p>
               <a href="/about" className="read-more-btn">
                 LÄS MER
@@ -94,7 +95,8 @@ const Home = () => {
               <h3>För Arbetssökande</h3>
               <p className="ser-text">
                 Personlig coachning, jobbmatchning och kompetensutveckling för
-                att hjälpa dig att hitta det perfekta jobbet.
+                att hjälpa dig att hitta det perfekta jobbet genom våra Rusta
+                och matcha program.
               </p>
             </div>
             <div className="service-card">
@@ -102,7 +104,8 @@ const Home = () => {
               <h3>För Arbetsgivare</h3>
               <p className="ser-text">
                 Effektiva rekryteringstjänster för att koppla samman dig med de
-                mest lämpliga kandidaterna.
+                mest lämpliga kandidaterna genom våra Stockholm employment
+                services.
               </p>
             </div>
             <div className="service-card">
@@ -125,11 +128,12 @@ const Home = () => {
                 Aenean eget odio vel nulla{" "}
                 <span className="highlight">ullamcorper scelerisque</span>. Vi
                 erbjuder stöd och resurser för att öka dina chanser att hitta
-                ett jobb snabbt och effektivt.{" "}
+                ett jobb snabbt och effektivt genom våra career services
+                Stockholm.
               </p>
               <p>
                 Våra experter hjälper dig att bygga ett starkt CV och förbereda
-                dig för framgångsrika intervjuer
+                dig för framgångsrika intervjuer.
               </p>
             </div>
           </div>
@@ -142,19 +146,26 @@ const Home = () => {
             <div className="process-step">
               <FaUserPlus size={30} className="step-icon" />
               <h3>Steg 1: Registrera dig</h3>
-              <p>Registrera dig och berätta om dina karriärmål.</p>
+              <p>
+                Registrera dig och berätta om dina karriärmål så att vi kan
+                erbjuda de bästa job matching services i Stockholm.
+              </p>
             </div>
             <div className="process-step">
               <FaChalkboardTeacher size={30} className="step-icon" />
               <h3>Steg 2: Personlig Coachning</h3>
-              <p>Få skräddarsydd coachning och stöd.</p>
+              <p>
+                Få skräddarsydd coachning och stöd från våra experter inom
+                career coaching Stockholm.
+              </p>
             </div>
             <div className="process-step">
               <FaBriefcase size={30} className="step-icon" />
               <h3>Steg 3: Jobbmatchning</h3>
               <p>
                 Vi matchar dig med jobbmöjligheter som passar dina färdigheter
-                och intressen.
+                och intressen genom våra comprehensive job placement Stockholm
+                services.
               </p>
             </div>
           </div>
