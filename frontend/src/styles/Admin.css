@@ -60,50 +60,84 @@ li {
   text-transform: uppercase;
 }
 
-/* List to hold the fetched data */
-.admin-data-list {
+/* Table to hold the fetched data */
+.admin-data-table {
   width: 100%;
-  max-width: 800px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  border-collapse: collapse;
 }
 
-/* Each item in the list */
-.admin-data-item {
-  background-color: #fff;
-  padding: 15px 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  word-wrap: break-word; /* Ensure text wraps correctly */
+.admin-data-table th,
+.admin-data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
-/* Hover effect for list items */
-.admin-data-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+.admin-data-table th {
+  background-color: #f2f2f2;
+  text-transform: uppercase;
 }
 
-/* Making text in list items more readable */
-.admin-data-item span {
-  display: block;
-  margin: 5px 0;
-  color: #555;
-  font-weight: 500;
+.admin-data-table tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
+.admin-data-table tr:hover {
+  background-color: #ddd;
+}
+
+.admin-data-table th,
+.admin-data-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+/* Form styling */
 form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-form label,
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
 form input,
 form textarea,
 form button {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form input[type="text"],
+form textarea {
   width: 100%;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+}
+
+form button:hover {
+  background-color: #555;
 }
 
 /* Responsive Design */
@@ -133,12 +167,24 @@ form button {
     font-size: 1.5em;
   }
 
-  .admin-data-list {
-    gap: 10px;
+  .admin-data-table th,
+  .admin-data-table td {
+    padding: 8px 10px;
   }
 
-  .admin-data-item {
-    padding: 10px;
+  form {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section h2 {
+    font-size: 1.2em;
+  }
+
+  .admin-data-table th,
+  .admin-data-table td {
+    padding: 6px 8px;
   }
 
   form {
@@ -151,21 +197,8 @@ form button {
   form button {
     margin-bottom: 8px;
   }
-}
 
-@media (max-width: 480px) {
-  .section h2 {
-    font-size: 1.2em;
-  }
-
-  .admin-data-item {
-    padding: 8px;
-  }
-
-  form label,
-  form input,
-  form textarea,
   form button {
-    margin-bottom: 6px;
+    padding: 10px;
   }
 }

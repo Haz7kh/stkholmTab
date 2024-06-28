@@ -82,27 +82,53 @@ const Admin = () => {
           {activeSection === "data" && (
             <div className="section">
               <h2>Data</h2>
-              <ul className="admin-data-list">
-                {data.map((item) => (
-                  <li key={item._id} className="admin-data-item">
-                    {item.name} - {item.personnr} - {item.phone} - {item.email}{" "}
-                    - {item.dataField}
-                  </li>
-                ))}
-              </ul>
+              <table className="admin-data-table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Personnr</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>DataField</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {data.map((item) => (
+                    <tr key={item._id}>
+                      <td>{item.name}</td>
+                      <td>{item.personnr}</td>
+                      <td>{item.phone}</td>
+                      <td>{item.email}</td>
+                      <td>{item.address}</td>
+                      <td>{item.dataField}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           )}
           {activeSection === "users" && (
             <div className="section">
               <h2>Users</h2>
-              <ul className="admin-data-list">
-                {users.map((user) => (
-                  <li key={user._id} className="admin-data-item">
-                    {user.username} - {user.email} -{" "}
-                    {user.isAdmin ? "Admin" : "User"}
-                  </li>
-                ))}
-              </ul>
+              <table className="admin-data-table">
+                <thead>
+                  <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {users.map((user) => (
+                    <tr key={user._id}>
+                      <td>{user.username}</td>
+                      <td>{user.email}</td>
+                      <td>{user.isAdmin ? "Admin" : "User"}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           )}
           {activeSection === "create-post" && (
