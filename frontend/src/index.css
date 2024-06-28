@@ -13,3 +13,7 @@ p {
   box-sizing: border-box;
   font-family: "Noto Sans Korean", sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
