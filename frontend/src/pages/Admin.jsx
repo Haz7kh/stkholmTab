@@ -85,12 +85,12 @@ const Admin = () => {
               <table className="admin-data-table">
                 <thead>
                   <tr>
-                    <th>Name</th>
-                    <th>Personnr</th>
+                    <th>Full name</th>
+                    <th>Person- number</th>
                     <th>Phone</th>
                     <th>Email</th>
                     <th>Address</th>
-                    <th>DataField</th>
+                    <th>More to notice </th>
                   </tr>
                 </thead>
                 <tbody>
